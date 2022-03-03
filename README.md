@@ -12,6 +12,17 @@ pip3 install -r requirements.txt
 python main.py
 ```
 
+## Docker
+To run the application using Docker, do the following:
+1. Build the Docker container 
+```
+docker build -t pywordle .
+```
+2. Run the application
+```
+docker run -ti pywordle
+```
+
 ## Tests
 You can run the unit tests with the following command from the root directory
 ```
