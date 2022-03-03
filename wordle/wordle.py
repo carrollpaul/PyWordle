@@ -4,8 +4,7 @@ import random
 class Wordle:
     def __init__(self) -> None:
         with open("wordle/words.txt", "r") as f:
-            text = f.read()
-            self.words = list(map(str, text.split()))
+            self.words = f.read().splitlines()
 
         self.answer = random.choice(self.words)
 
